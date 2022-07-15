@@ -1,4 +1,5 @@
 import React from "react";
+import { render } from "react-dom";
 
 class App extends React.Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class App extends React.Component {
 
   handlePubG = () => {
     this.setState({
-      image: <img src="./images/pubg.jpeg" alt="pubg" />,
+      image: <img src="./images/pubg.jpg" alt="pubg" />,
     });
   };
 
@@ -61,4 +62,51 @@ class App extends React.Component {
   }
 }
 
+
 export default App;
+
+
+
+
+
+// other stile
+
+
+
+
+// import React from "react";
+
+// class App extends React.Component{
+//     constructor(props){
+//         super(props);
+//         this.state = {
+//             active: "basketball"
+//         }
+//     }
+//     render(){
+//         let labels = ['basketball' , 'pubg' , 'tiger' ,'phone', 'laptop', 'cricket'];
+//         return <>
+//             <h1>Handling State</h1>
+//             <div>
+//                 {
+//                     labels.map((label) => (
+//                         <button
+//                             onClick={() => {
+//                                 this.setState({
+//                                     active : label
+//                                 })
+//                             }}
+//                         >{label}</button>
+//                     ))
+//                 }
+//             </div>
+//             <img
+//                 src={`./images/${this.state.active}.jpg`}
+//                 alt={this.state.active}
+//             >
+//             </img>
+//         </>
+//     }
+// }
+
+// export default App;
