@@ -6,24 +6,17 @@ class Extension extends React.Component {
     this.state = {
       count: 0,
       step: 0,
-      max: 10,
+      max: 15,
     };
   }
 
   handleIncrement = () => {
-    if (this.state.step === 0) {
-      if (this.state.max !== this.state.count) {
-        this.setState({
-          count: this.state.count + 1,
-        });
-      }
-    } else {
-      if (this.state.max !== this.state.count) {
-        this.setState({
-          count: this.state.count + this.state.step,
-        });
-      }
-    }
+    let {count, step, max} = this.state;
+    this.setState({
+      count: count + step > max 
+      ? count
+      : count + step 
+    });
   };
 
   handleDecrement = () => {

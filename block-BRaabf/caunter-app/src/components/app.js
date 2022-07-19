@@ -6,40 +6,27 @@ class App extends React.Component {
     super(props);
     this.state = {
       counter: 0,
-      steps: 0,
+      steps: 5,
     };
   }
 
   
 
   handleIncrement = () => {
-    if (this.state.steps === 0) {
-      this.setState({
-        counter: this.state.counter + 1,
-      });
-    } else {
-      this.setState({
-        counter: this.state.counter + this.state.steps,
-      });
-    }
+    this.setState({
+      counter: this.state.counter + this.state.steps
+    })
   };
 
   handleDecrement = () => {
-    if (this.state.steps === 0) {
-      this.setState({
-        counter: this.state.counter - 1,
-      });
-    } else {
-      this.setState({
-        counter: this.state.counter - this.state.steps,
-      });
-    }
+    this.setState({
+      counter: this.state.counter - this.state.steps
+    })
   };
 
   handleReset = () => {
     this.setState({
-      counter: 0,
-      steps: 0,
+      counter: 0
     });
   };
   render() {
