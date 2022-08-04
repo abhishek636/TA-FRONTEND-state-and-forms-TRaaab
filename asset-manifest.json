@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TA-FRONTEND-state-and-forms-TRaaab/static/css/main.0e4eb98f.css",
+    "main.js": "/TA-FRONTEND-state-and-forms-TRaaab/static/js/main.0ecee28d.js",
+    "index.html": "/TA-FRONTEND-state-and-forms-TRaaab/index.html",
+    "main.0e4eb98f.css.map": "/TA-FRONTEND-state-and-forms-TRaaab/static/css/main.0e4eb98f.css.map",
+    "main.0ecee28d.js.map": "/TA-FRONTEND-state-and-forms-TRaaab/static/js/main.0ecee28d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e4eb98f.css",
+    "static/js/main.0ecee28d.js"
+  ]
+}
